@@ -27,22 +27,29 @@ A demo script (`demo.py`) integrates this tool with a simple agent that uses the
    - Four test cases are included in demo.py. Replace them with your own test cases.
 
 4. **Outcome of test cases**
-   
-## --- Case 1: Successful Execution (Positive)---
+```
+--- Case 1: Successful Execution (Positive)---
 Agent decided to call tool: sentiment_scorer
 With arguments: {'text': 'Our company delivered excellent quarterly results with strong profit growth across all divisions. The successful product launch exceeded expectations, and we are pleased to announce an upgrade to our guidance. Customer feedback remains overwhelmingly positive, reflecting the great work of our dedicated team and the strong momentum in our business.'}
 Tool Success: {'sentiment': 'positive', 'score': 0.9126689115327974}
+```
 
-## --- Case 2: Successful Execution (Negative) ---
+```
+--- Case 2: Successful Execution (Negative) ---
 Agent decided to call tool: sentiment_scorer
 With arguments: {'text': 'The company reported poor quarterly results with significant losses and declining revenues across key divisions. The failed product launch missed expectations, forcing us to announce a downgrade to our guidance. Customer feedback has been overwhelmingly negative, reflecting serious problems with our operations and increased risk factors ahead.'}
 Tool Success: {'sentiment': 'negative', 'score': 0.2816745904875445}
+```
 
-## --- Case 3: Empty Input ---
+```
+--- Case 3: Empty Input ---
 Empty Input or Invalid input type. Please provide a non-empty string.
+```
 
-## --- Case 4: Invalid Input (Non-string) ---
+```
+--- Case 4: Invalid Input (Non-string) ---
 Empty Input or Invalid input type. Please provide a non-empty string.
+```
 
 ## Design Decisions and Limitations
 - **Heuristic Approach:** The sentiment scorer uses simple keyword lists for positive and negative words. This makes it fast and interpretable, but less accurate than machine learning models for nuanced language.
