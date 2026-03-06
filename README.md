@@ -41,11 +41,13 @@ With arguments: {'text': 'The company reported poor quarterly results with signi
 Tool Success: {'sentiment': 'negative', 'score': 0.2816745904875445}
 ```
 
+agent.analyze_text("")
 ```
 --- Case 3: Empty Input ---
 Empty Input or Invalid input type. Please provide a non-empty string.
 ```
 
+agent.analyze_text(123)
 ```
 --- Case 4: Invalid Input (Non-string) ---
 Empty Input or Invalid input type. Please provide a non-empty string.
